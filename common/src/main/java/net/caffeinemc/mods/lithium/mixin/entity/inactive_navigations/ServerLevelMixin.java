@@ -51,8 +51,8 @@ public abstract class ServerLevelMixin extends Level implements ServerWorldExten
     @Final
     public Set<Mob> navigatingMobs;
 
-    protected ServerLevelMixin(WritableLevelData writableLevelData, ResourceKey<Level> resourceKey, RegistryAccess registryAccess, Holder<DimensionType> holder, boolean bl, boolean bl2, long l, int i) {
-        super(writableLevelData, resourceKey, registryAccess, holder, bl, bl2, l, i);
+    protected ServerLevelMixin(WritableLevelData writableLevelData, ResourceKey<Level> resourceKey, RegistryAccess registryAccess, Holder<DimensionType> holder, boolean bl, boolean bl2, int i) {
+        super(writableLevelData, resourceKey, registryAccess, holder, bl, bl2, i);
     }
 
 

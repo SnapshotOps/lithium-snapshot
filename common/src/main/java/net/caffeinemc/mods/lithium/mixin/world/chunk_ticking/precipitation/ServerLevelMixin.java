@@ -22,8 +22,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(ServerLevel.class)
 public abstract class ServerLevelMixin extends Level implements ServerEntityGetter, WorldGenLevel {
 
-    protected ServerLevelMixin(WritableLevelData writableLevelData, ResourceKey<Level> resourceKey, RegistryAccess registryAccess, Holder<DimensionType> holder, boolean bl, boolean bl2, long l, int i) {
-        super(writableLevelData, resourceKey, registryAccess, holder, bl, bl2, l, i);
+    protected ServerLevelMixin(WritableLevelData writableLevelData, ResourceKey<Level> resourceKey, RegistryAccess registryAccess, Holder<DimensionType> holder, boolean bl, boolean bl2, int i) {
+        super(writableLevelData, resourceKey, registryAccess, holder, bl, bl2, i);
     }
 
     @Inject(

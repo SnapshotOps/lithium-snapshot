@@ -18,8 +18,8 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 @Mixin(ClientLevel.class)
 public abstract class ClientLevelMixin extends Level {
 
-    protected ClientLevelMixin(WritableLevelData writableLevelData, ResourceKey<Level> resourceKey, RegistryAccess registryAccess, Holder<DimensionType> holder, boolean bl, boolean bl2, long l, int i) {
-        super(writableLevelData, resourceKey, registryAccess, holder, bl, bl2, l, i);
+    protected ClientLevelMixin(WritableLevelData writableLevelData, ResourceKey<Level> resourceKey, RegistryAccess registryAccess, Holder<DimensionType> holder, boolean bl, boolean bl2, int i) {
+        super(writableLevelData, resourceKey, registryAccess, holder, bl, bl2, i);
     }
 
     //Future work if still showing up in profiler: Can also check the nearby biome palettes for the particle-emitting nether biomes

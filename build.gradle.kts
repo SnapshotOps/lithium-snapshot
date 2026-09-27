@@ -9,10 +9,10 @@ plugins {
 
 // Fabric: https://fabricmc.net/develop/
 // Neoforge: https://neoforged.net/
-val MINECRAFT_COMPILE_VERSION by extra { "26.3" }
+val MINECRAFT_COMPILE_VERSION by extra { "26.4-snapshot-1" }
 
-val MC_DISPLAY_VERSION by extra { "26.3.x" } //Used for human read text
-val MC_SUPPORTED_RANGE_FABRIC by extra { "~26.3" } // e.g. "~26.1", format: https://docs.npmjs.com/about-semantic-versioning
+val MC_DISPLAY_VERSION by extra { "26.4-snapshot-1" } //Used for human read text
+val MC_SUPPORTED_RANGE_FABRIC by extra { ">=26.3" } // e.g. "~26.1", format: https://docs.npmjs.com/about-semantic-versioning
 val MC_SUPPORTED_RANGE_NEOFORGE by extra { "[26.3, 26.4)" } // e.g. "[26.1, 26.2)", format: https://maven.apache.org/enforcer/enforcer-rules/versionRanges.html
 val MC_PUBLISHING_MIN_VERSION by extra { "26.3" } // Minimum mc version for mod publish plugin, format: https://modmuss50.github.io/mod-publish-plugin/platforms/modrinth/
 val MC_PUBLISHING_MAX_VERSION by extra { "26.3" } //Inclusive maximum mc version for mod publish plugin

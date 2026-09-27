@@ -49,8 +49,8 @@ public abstract class ServerLevelMixin extends Level implements ServerEntityGett
     @Unique
     private static final int MAX_COUNT_FOR_BLOCK_SEARCH_AFTER_RANDOM_CHANCE = (int) (4096 * 0.09375);
 
-    protected ServerLevelMixin(WritableLevelData writableLevelData, ResourceKey<Level> resourceKey, RegistryAccess registryAccess, Holder<DimensionType> holder, boolean bl, boolean bl2, long l, int i) {
-        super(writableLevelData, resourceKey, registryAccess, holder, bl, bl2, l, i);
+    protected ServerLevelMixin(WritableLevelData writableLevelData, ResourceKey<Level> resourceKey, RegistryAccess registryAccess, Holder<DimensionType> holder, boolean bl, boolean bl2, int i) {
+        super(writableLevelData, resourceKey, registryAccess, holder, bl, bl2, i);
     }
 
     @ModifyExpressionValue(

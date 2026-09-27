@@ -26,7 +26,7 @@ public abstract class LevelMixin implements LevelHeightAccessor {
             method = "<init>",
             at = @At("RETURN")
     )
-    private void initHeightCache(WritableLevelData writableLevelData, ResourceKey<Level> resourceKey, RegistryAccess registryAccess, Holder<DimensionType> dimensionEntry, boolean bl, boolean bl2, long l, int i, CallbackInfo ci) {
+    private void initHeightCache(WritableLevelData writableLevelData, ResourceKey<Level> resourceKey, RegistryAccess registryAccess, Holder<DimensionType> dimensionEntry, boolean bl, boolean bl2, int i, CallbackInfo ci) {
         this.height = dimensionEntry.value().height();
         this.bottomY = dimensionEntry.value().minY();
         this.topYInclusive = this.bottomY + this.height - 1;
