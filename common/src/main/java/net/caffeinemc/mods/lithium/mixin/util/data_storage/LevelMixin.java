@@ -19,7 +19,7 @@ public class LevelMixin implements LithiumData {
     private Data storage;
 
     @Inject(method = "<init>", at = @At("RETURN"))
-    private void initLithiumData(WritableLevelData writableLevelData, ResourceKey<?> resourceKey, RegistryAccess registryAccess, Holder<?> holder, boolean bl, boolean bl2, long l, int i, CallbackInfo ci) {
+    private void initLithiumData(WritableLevelData writableLevelData, ResourceKey<?> resourceKey, RegistryAccess registryAccess, Holder<?> holder, boolean bl, boolean bl2, int i, CallbackInfo ci) {
         this.storage = new Data(registryAccess);
     }
 
